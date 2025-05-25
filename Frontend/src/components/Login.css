@@ -1,0 +1,169 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.background-img_login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.box_login {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputBox_login {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox_login input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputBox_login input:focus {
+    border-color: #4CAF50;
+}
+
+.inputBox_login span {
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.inputBox_login .input_oicon_8 {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #888;
+    font-size: 18px;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.decjjwed8 button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.decjjwed8 button:hover {
+    background-color: #45a049;
+}
+
+.decjjwed8 button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .box_login {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .inputBox_login input {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .inputBox_login .input_oicon_8 {
+        font-size: 16px;
+    }
+
+    .decjjwed8 button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box_login {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .inputBox_login input {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .decjjwed8 button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
